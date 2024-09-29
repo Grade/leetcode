@@ -1,4 +1,4 @@
-package leetcode.arrays;
+package leetcode.strings;
 
 public class ReverseVowels {
     public String reverseVowels(String s) {

@@ -1,4 +1,4 @@
-package leetcode.arrays;
+package leetcode.strings;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
