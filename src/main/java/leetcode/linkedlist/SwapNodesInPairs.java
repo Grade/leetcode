@@ -20,6 +20,16 @@ class SwapNodesInPairs {
     return newHead;
   }
 
+  public ListNode swapPairsRecursive(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    ListNode second = head.next;
+    head.next = swapPairsRecursive(second.next);
+    second.next = head;
+    return second;
+  }
+
   void swap(ListNode preLeft, ListNode left, ListNode right) {
     left.next = right.next;
     right.next = left;

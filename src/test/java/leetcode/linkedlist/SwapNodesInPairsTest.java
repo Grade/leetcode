@@ -33,4 +33,14 @@ class SwapNodesInPairsTest {
 
     assertEquals(expected, result);
   }
+
+  @ParameterizedTest
+  @MethodSource("provideParameters")
+  void swapPairsRecursive(ListNode head, ListNode expected) {
+    SwapNodesInPairs sut = new SwapNodesInPairs();
+
+    ListNode result = sut.swapPairsRecursive(head);
+
+    assertEquals(expected, result);
+  }
 }
